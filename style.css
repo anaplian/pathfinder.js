@@ -1,0 +1,36 @@
+body {
+    background: #e9ecee;
+}
+
+#main {
+    width: 70%;
+    background: #fff;
+    padding: 50px;
+    margin: 50px auto;
+    display:table;
+}
+
+#main-canvas {
+    float: left;
+}
+
+#about {
+    float: right;
+    text-align: right;
+    width: 37%;
+}
+
+h1 {
+    font-family: 'Slabo 27px', serif;
+    color: #192025;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 85%;
+}
+
+#about button {
+    margin-top: 30px;
+    padding: 5px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pathFinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main">
+      <canvas id="main-canvas"></canvas>
+      <div id="about">
+        <h1>pathfinder.js</h1>
+        <p>An implementation of A* pathfinding in Javascript,<br /> here demo'd on canvas.</p>
+        <p>The algorithm uses Manhattan distance for its heuristic, and looks for 
+          an orthogonal path through a randomly generated dungeon.</p>
+        <p><button onclick="launchPathfinder(canvas)">Do It Again</button></p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+    	var canvas = document.getElementById('main-canvas');
+    	launchPathfinder(canvas);
+    </script>
+  </body>
+</html>
