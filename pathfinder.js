@@ -179,12 +179,12 @@ var launchPathfinder = (function(){
     function doPainting(open, closed, start, finish, currentNode, grid, cxt){
         fillNodes(closed, CLOSED_COLOUR, false, cxt);
         fillNodes(open, OPEN_COLOUR, true, cxt);
-        fillNode(currentNode, CURRENT_COLOUR, cxt);
+        fillNodes([currentNode], CURRENT_COLOUR, false, cxt);
 
         fillPath(closed, finish, PATH_COLOUR, cxt);
         fillObstacles(grid, cxt);
-        fillNode([start], START_COLOUR, false, cxt);
-        fillNode([finish], FINISH_COLOUR, false, cxt);
+        fillNodes([start], START_COLOUR, false, cxt);
+        fillNodes([finish], FINISH_COLOUR, false, cxt);
     }
 
     function fillNodes(nodes, colour, writeScore, cxt){

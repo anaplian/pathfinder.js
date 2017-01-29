@@ -12,25 +12,23 @@ body {
 
 #main-canvas {
     float: left;
-}
-
-#about {
-    float: right;
-    text-align: right;
-    width: 37%;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
 }
 
 h1 {
     font-family: 'Slabo 27px', serif;
     color: #192025;
+    text-align: right;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 85%;
+    text-align: right;
 }
 
-#about button {
+#again-button {
     margin-top: 30px;
     padding: 5px;
 }

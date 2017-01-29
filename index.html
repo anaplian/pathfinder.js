@@ -12,13 +12,13 @@
   <body>
     <div id="main">
       <canvas id="main-canvas"></canvas>
-      <div id="about">
+      
         <h1>pathfinder.js</h1>
         <p>An implementation of A* pathfinding in Javascript,<br /> here demo'd on canvas.</p>
         <p>The algorithm uses Manhattan distance for its heuristic, and looks for 
           an orthogonal path through a randomly generated dungeon.</p>
-        <p><button onclick="launchPathfinder(canvas)">Do It Again</button></p>
-      </div>
+        <p><button id="again-button" onclick="launchPathfinder(canvas)">Do It Again</button></p>
+      
 
     </div>
 
